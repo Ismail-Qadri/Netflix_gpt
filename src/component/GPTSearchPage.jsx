@@ -19,4 +19,3 @@ const GPTSearchPage = () => {
 };
 
 export default GPTSearchPage;
-git init
