@@ -1,7 +1,7 @@
 export const USER_AVATAR =
   "https://i.pinimg.com/474x/5b/50/e7/5b50e75d07c726d36f397f6359098f58.jpg";
 
-export const API_OPTION = {
+export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
@@ -11,3 +11,12 @@ export const API_OPTION = {
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
+
+export const GEMINI_KEY = import.meta.env.VITE_GEMINI_API
+
+// export const OPENAI_KEY = import.meta.env.VITE_OPENAI_API_KEY;
+
+export const SUPPORTED_LANGUAGES = [{identifier : "en" , name  :" English"} ,
+  {identifier : "hindi" , name  :" Hindi"}  ,
+  {identifier : "spanish" , name  :" Spanish"}
+]

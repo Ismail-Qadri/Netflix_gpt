@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { API_OPTION } from "../Utils/constant";
+import { API_OPTIONS } from "../Utils/constant"
 
 const useMovieTrailer = async (idOfMovie) => {
   // const [trailer, setTrailer] = useState(null);
@@ -15,7 +15,7 @@ const useMovieTrailer = async (idOfMovie) => {
       "https://api.themoviedb.org/3/movie/" +
         idOfMovie +
         "/videos?language=en-US",
-      API_OPTION
+      API_OPTIONS
     );
     const json = await data.json();
     console.log(json);
